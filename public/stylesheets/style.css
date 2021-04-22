@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  color: rgb(92, 52, 25)
+}
+
+h2, label {
+  position: relative;
+  text-align: center;
+  color: rgb(45, 78, 45);
+  font-weight: bolder;
+}
+
+h3 {
+  color: rgb(92, 52, 25);
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-weight: bolder;
+  color: rgb(4, 36, 9);
+  position: relative;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+input {
+  border-radius: 10%;
+}
+
+textarea {
+  border-radius: 5%;
+}
+
+.submitButton {
+  margin: 20px;
+}
