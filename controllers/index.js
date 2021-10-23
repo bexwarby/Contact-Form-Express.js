@@ -9,7 +9,7 @@ const index = {
     /* Home page view */
     homePage: (req, res) => {
         res.render('index', {
-            title: 'DW Photography',
+            title: 'Contact Me',
             subtitle: 'Please don\'t hesitate to get in touch'
         });
     },
@@ -24,6 +24,7 @@ const index = {
             msg: req.body.msg,
         });
 
+        // save contact to robo 3t
         newContact.save((err) => {
             if (err) {
                 console.log(err);

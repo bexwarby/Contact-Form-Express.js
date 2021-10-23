@@ -5,18 +5,19 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
+// router imports
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 // set up connection to Robot 3T
-mongoose.connect("mongodb://localhost:27017/my-site-april21"), {
+mongoose.connect("mongodb://localhost:27017/my-site-april21", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-}
+  useUnifiedTopology: true  
+});
 // shows once connection is open
 mongoose.connection.once("once", () => {
   console.log("your DB connection is established")
-})
+});
 
 const app = express();
 
@@ -43,7 +44,6 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
   // render the error page
   res.status(err.status || 500);
   res.render('error');

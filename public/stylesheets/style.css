@@ -42,12 +42,11 @@ p {
   text-align: center;
 }
 
+/* FORM */
 form {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  text-align: center;
-  justify-content: center;
+  width: 300px;
   margin-top: 50px;
 }
 
@@ -60,5 +59,6 @@ textarea {
 }
 
 .submitButton {
-  margin: 20px;
+  width: 150px;
+  margin: 20px auto;
 }
